@@ -1,14 +1,23 @@
 .. image:: https://github.com/sork93/AJPOC/blob/master/AJPOC/resources/AJPOC.png?raw=true
+   :height: 660px
+   :width: 750px
    :align: center
+   :scale: 50 %
    :target: https://github.com/sork93/AJPOC
-   :alt: python-telegram-bot Logo
+   :alt: AJPOC
+
+|
 
 **AJPOC** stands for **A**\ irbus **J**\ obs **PO**\ rtal **C**\ rawler, and therefore this project aims to
-implement a customizable web crawler for vacancies listed in the Airbus careers portal.
+implement a customizable web crawler for the vacancies listed in the Airbus careers portal.
 
 .. image:: https://img.shields.io/github/license/sork93/AJPOC
    :target: https://www.gnu.org/licenses/gpl-3.0.html
    :alt: GitHub
+
+.. image:: https://img.shields.io/github/issues/sork93/AJPOC
+   :alt: GitHub issues
+   :target: https://github.com/sork93/AJPOC/issues
 
 
 ***************
