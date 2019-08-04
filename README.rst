@@ -1,8 +1,8 @@
-.. image:: https://github.com/sork93/AJPOC/blob/master/AJPOC/resources/AJPOC.png?raw=true
-   :height: 660px
-   :width: 750px
+.. image:: https://github.com/sork93/AJPOC/blob/master/AJPOC/resources/AJPOC_900_400_px.png?raw=true
+   :width: 900 px
+   :height: 400 px
    :align: center
-   :scale: 50 %
+   :scale: 100 %
    :target: https://github.com/sork93/AJPOC
    :alt: AJPOC
 
