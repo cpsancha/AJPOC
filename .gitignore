@@ -1,2 +1,8 @@
-#PyCharm project
+# PyCharm project
 /.idea/
+
+# Python bytecode
+/ajpoc/__pycache__/
+
+# Logger
+/ajpoc.log

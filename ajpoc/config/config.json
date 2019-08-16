@@ -1,0 +1,20 @@
+{
+  "db": {
+    "engine": "sqlite",
+    "host": "localhost",
+    "user": "root",
+    "pass": "password",
+    "db_name": "ajpoc"
+  },
+  "logger": {
+    "console_appender": true,
+    "console_level": "DEBUG",
+    "file_appender": true,
+    "file_level": "DEBUG",
+    "log_file": "../ajpoc.log",
+    "log_encoding": "utf-8",
+    "log_fmt": "%(asctime)s - %(levelname)s: [%(name)s] %(message)s",
+    "date_fmt": "%Y-%m-%d_%H:%M:%S",
+    "detailed_log": false
+  }
+}

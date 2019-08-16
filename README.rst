@@ -1,4 +1,4 @@
-.. image:: https://github.com/sork93/AJPOC/blob/master/AJPOC/resources/AJPOC_900_400_px.png?raw=true
+.. image:: https://github.com/sork93/AJPOC/blob/master/ajpoc/resources/AJPOC_900_400_px.png?raw=true
    :width: 900 px
    :height: 400 px
    :align: center
