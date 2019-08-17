@@ -6,7 +6,7 @@ Main module
 """
 import scrapy.crawler
 import ajpoc.vacancies_spider
-import ajpoc.setup_logger
+import ajpoc.logger_setup
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
     crawler spider.
     """
     # Configure scrapy logger
-    ajpoc.setup_logger.setup_scrapy_logger()
+    ajpoc.logger_setup.setup_scrapy_logger()
 
     # Launch crawler process
     crawler_process = scrapy.crawler.CrawlerProcess({

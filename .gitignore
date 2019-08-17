@@ -3,6 +3,7 @@
 
 # Python bytecode
 /ajpoc/__pycache__/
+/tests/__pycache__/
 
-# Logger
+# Log
 /ajpoc.log

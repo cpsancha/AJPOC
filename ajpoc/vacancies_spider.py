@@ -8,7 +8,7 @@ import re
 from scrapy.http import Response
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from ajpoc.setup_logger import setup_module_logger
+from ajpoc.logger_setup import setup_module_logger
 
 # Define module logger
 LOGGER = setup_module_logger(__name__)
@@ -48,10 +48,12 @@ class VacanciesSpider(CrawlSpider):
         """
         LOGGER.info('Processing listing page: %s', response.url)
         # vacancies_links = response.css(
-        #     '.thumbnail-info-wrapper > .display-block > a.title::attr(href)').extract()
+        #     '.thumbnail-info-wrapper > .display-block > '
+        #     'a.title::attr(href)').extract()
         # for vacancy_link in vacancies_links:
         #     vacancy_link = response.urljoin(playlist_link)
-        #     yield Request(vacancy_link, callback=self.parse_vacancies_contents)
+        #     yield Request(vacancy_link,
+        #                   callback=self.parse_vacancies_contents)
 
     @staticmethod
     def parse_vacancies_contents(response: Response):

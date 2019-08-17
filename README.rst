@@ -15,9 +15,14 @@ implement a customizable web crawler for the vacancies listed in the Airbus care
    :target: https://www.gnu.org/licenses/gpl-3.0.html
    :alt: GitHub
 
+.. image:: https://api.travis-ci.org/sork93/AJPOC.svg?branch=master
+   :target: https://travis-ci.org/sork93/AJPOC
+   :alt: Travis CI
+
 .. image:: https://img.shields.io/github/issues/sork93/AJPOC
-   :alt: GitHub issues
    :target: https://github.com/sork93/AJPOC/issues
+   :alt: GitHub issues
+
 
 
 ***************
