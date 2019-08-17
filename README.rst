@@ -27,6 +27,10 @@ implement a customizable web crawler for the vacancies listed in the Airbus care
    :target: https://coveralls.io/github/sork93/AJPOC?branch=master
    :alt: Coveralls
 
+.. image:: https://codecov.io/gh/sork93/AJPOC/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/sork93/AJPOC
+   :alt: Codecov
+
 .. image:: https://api.codacy.com/project/badge/Grade/2326c1caeb904520871306ec4a1305ee
    :target: https://www.codacy.com/app/sork93/AJPOC
    :alt: Codacy

@@ -19,6 +19,7 @@ script:
   - flake8 --statistics
   - pylint ajpoc
   - python -m pytest --cov=ajpoc
-# upload code coverage report to coveralls
+# push code coverage report to coveralls and codecov
 after_success:
   - coveralls
+  - codecov
