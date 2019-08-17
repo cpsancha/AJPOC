@@ -82,9 +82,7 @@ class VacanciesSpider(CrawlSpider):
                                'c-jobsearchpage_searchlink.current',),
                            tags=('a',),
                            attrs=('href',),
-                           process_value=parse_next_listing_page.__get__(
-                               parse_next_listing_page.__class__,
-                               parse_next_listing_page.__class__)
+                           process_value=parse_next_listing_page.__func__
                            ),
              callback="parse_vacancies_links",
              follow=True),)
