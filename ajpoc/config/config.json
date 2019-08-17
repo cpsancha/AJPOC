@@ -15,6 +15,6 @@
     "log_encoding": "utf-8",
     "log_fmt": "%(asctime)s - %(levelname)s: [%(name)s] %(message)s",
     "date_fmt": "%Y-%m-%d_%H:%M:%S",
-    "detailed_log": false
+    "detailed_log": true
   }
 }

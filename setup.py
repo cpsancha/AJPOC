@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 from ajpoc import __author__ as ajpoc_author
 from ajpoc import __version__ as ajpoc_version
 
-with open(path.join(path.realpath(path.join(getcwd(), path.dirname(__file__))), "README.rst"), "r") as fh:
+with open(path.join(path.realpath(path.join(getcwd(), path.dirname(__file__))),
+                    "README.rst"), "r") as fh:
     long_description = fh.read()
 
 setup(
