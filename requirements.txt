@@ -1,3 +1,4 @@
+coveralls==1.8.2
 flake8==3.7.7
 lxml==4.3.4
 pip==19.1.1

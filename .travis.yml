@@ -13,8 +13,12 @@ branches:
 install:
   - pip install -r requirements.txt
   - pip install -e .
-# run tests and static code analysis
+# run tests, static code analysis and code coverage analysis
 script:
   - python -m pytest
   - flake8 --statistics
   - pylint ajpoc
+  - python -m pytest --cov=ajpoc
+# upload code coverage report to coveralls
+after_success:
+  - coveralls

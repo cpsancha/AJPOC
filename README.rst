@@ -23,6 +23,11 @@ implement a customizable web crawler for the vacancies listed in the Airbus care
    :target: https://github.com/sork93/AJPOC/issues
    :alt: GitHub issues
 
+.. image:: https://coveralls.io/repos/github/sork93/AJPOC/badge.svg?branch=master
+   :target: https://coveralls.io/github/sork93/AJPOC?branch=master
+   :alt: Coveralls
+
+
 
 
 ***************
