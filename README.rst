@@ -42,7 +42,7 @@ Project stages:
 
 Stage 1 (Work-in-progress)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Implementation of the `Scapy spider <https://doc.scrapy.org/en/latest/topics/spiders.html>`_ capable of:
+- Implementation of the `Scrapy spider <https://doc.scrapy.org/en/latest/topics/spiders.html>`_ capable of:
 
   - Following the *"Next Page"* hyperlink in the vacancies listing pages.
   - Following the vacancies links to access to its details.
@@ -52,7 +52,7 @@ Stage 1 (Work-in-progress)
 Stage 2 (TODO)
 ^^^^^^^^^^^^^^
 - Implement the necessary classes for storing the information of the parsed "*vacancies*" objects into models.
-- Implement a custom `Scapy pipeline <https://doc.scrapy.org/en/latest/topics/item-pipeline.html>`_ to process the
+- Implement a custom `Scrapy pipeline <https://doc.scrapy.org/en/latest/topics/item-pipeline.html>`_ to process the
   parsed data into this new objects.
 - Adapt the `spider <https://doc.scrapy.org/en/latest/topics/spiders.html>`_ to use the new `pipeline
   <https://doc.scrapy.org/en/latest/topics/item-pipeline.html>`_.
