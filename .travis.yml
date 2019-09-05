@@ -21,5 +21,4 @@ script:
   - python -m pytest --cov=ajpoc
 # push code coverage report to coveralls and codecov
 after_success:
-  - coveralls
   - codecov

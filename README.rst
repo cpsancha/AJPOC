@@ -11,30 +11,27 @@
 **AJPOC** stands for **A**\ irbus **J**\ obs **PO**\ rtal **C**\ rawler, and therefore this project aims to
 implement a customizable web crawler for the vacancies listed in the Airbus careers portal.
 
-.. image:: https://img.shields.io/github/license/sork93/AJPOC
+.. image:: https://img.shields.io/github/license/cpsancha/AJPOC?style=flat
    :target: https://www.gnu.org/licenses/gpl-3.0.html
    :alt: GitHub
 
-.. image:: https://api.travis-ci.org/sork93/AJPOC.svg?branch=master
-   :target: https://travis-ci.org/sork93/AJPOC
+.. image:: https://img.shields.io/travis/cpsancha/AJPOC.svg?branch=master?style=flat&logo=travis
+   :target: https://travis-ci.org/cpsancha/AJPOC
    :alt: Travis CI
 
-.. image:: https://img.shields.io/github/issues/sork93/AJPOC
-   :target: https://github.com/sork93/AJPOC/issues
+.. image:: https://img.shields.io/github/issues/cpsancha/AJPOC?style=flat&logo=github
+   :target: https://github.com/cpsancha/AJPOC/issues
    :alt: GitHub issues
 
-.. image:: https://coveralls.io/repos/github/sork93/AJPOC/badge.svg?branch=master
-   :target: https://coveralls.io/github/sork93/AJPOC?branch=master
-   :alt: Coveralls
-
-.. image:: https://codecov.io/gh/sork93/AJPOC/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/sork93/AJPOC
+.. image:: https://img.shields.io/codecov/c/github/cpsancha/AJPOC/master?style=flat&logo=Codecov
+   :target: https://codecov.io/gh/cpsancha/AJPOC
    :alt: Codecov
 
-.. image:: https://api.codacy.com/project/badge/Grade/2326c1caeb904520871306ec4a1305ee
-   :target: https://www.codacy.com/app/sork93/AJPOC
+.. image:: https://img.shields.io/codacy/grade/d0b14262d7c0464a8daed8370b204ee9/master?style=flat&logo=Codacy
+   :target: https://www.codacy.com/app/cpsancha/AJPOC
    :alt: Codacy
 
+.. image:: https://img.shields.io/badge/status-under%20development-blue
 
 ***************
 Project stages:
