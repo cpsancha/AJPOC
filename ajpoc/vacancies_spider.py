@@ -5,7 +5,10 @@
 Crawler spider for the vacancies
 """
 import re
+import html2text
 import scrapy
+
+from scrapy.linkextractors import LinkExtractor
 from ajpoc import logger_setup, vacancy_item
 
 
@@ -66,10 +69,67 @@ class VacanciesSpider(scrapy.spiders.CrawlSpider):
         """
         # Parse vacancy fields
         vacancy = vacancy_item.Vacancy()
+        # Url
+        vacancy['url'] = response.url
+        # Title
         vacancy['title'] = response.xpath(
             "//div[@class='c-jobdetails']"
-            "//h2[@class='c-banner__title col-sm-12']/text()").get()
-        vacancy['url'] = response.url
+            "//div[@class='header-job']"
+            "//h2[@class='c-banner__title col-xs-12 col-sm-12']/text()").get()
+        # Posting Date
+        vacancy['published_date'] = response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='header-job']"
+            "//div[@class='c-banner__jobinfo-ligne'][1]"
+            "/span[2]/text()").get()
+        # Division
+        vacancy['division'] = response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='header-job']"
+            "//div[@class='c-banner__jobinfo-ligne'][2]"
+            "/span[2]/text()").get()
+        # Location
+        vacancy['location'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='header-job']"
+            "//div[@class='c-banner__jobinfo-ligne'][3]"
+            "/span[2]/text()").get()).strip()
+        # Reference Code
+        vacancy['reference_code'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='c-banner__jobinfo-botton-ligne']"
+            "//span[text()='External code']"
+            "/parent::*/span[2]/text()").get()).strip()
+        # Functional Area
+        vacancy['job_family'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='c-banner__jobinfo-botton-ligne']"
+            "//span[text()='Job family']"
+            "/parent::*/span[2]/text()").get()).strip()
+        # Contract Type
+        vacancy['contract_type'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='c-banner__jobinfo-botton-ligne']"
+            "//span[text()='Contract type']"
+            "/parent::*/span[2]/text()").get()).strip()
+        # Work Experience
+        vacancy['work_experience'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='c-banner__jobinfo-botton-ligne']"
+            "//span[text()='Experience level']"
+            "/parent::*/span[2]/text()").get()).strip()
+        # Working Time
+        vacancy['working_time'] = str(response.xpath(
+            "//div[@class='c-jobdetails']"
+            "//div[@class='c-banner__jobinfo-botton-ligne']"
+            "//span[text()='Working Time']"
+            "/parent::*/span[2]/text()").get()).strip()
+        # Description
+        vacancy['description'] = html2text.html2text(response.xpath(
+            "//div[@class='has-padding c-contentjob']"
+            "//h2[text()='Job Description']"
+            "/parent::*/div[2]").get())
+
         self.logger.info('Processing vacancy: %s --> %s',
                          vacancy.get('title'), vacancy.get('url'))
         self.scraped_data.append(vacancy)
@@ -96,7 +156,7 @@ class VacanciesSpider(scrapy.spiders.CrawlSpider):
 
     rules = (
         scrapy.spiders.Rule(
-            scrapy.linkextractors.LinkExtractor(
+            LinkExtractor(
                 allow=(),
                 restrict_css=('a.c-pagination--item.link.'
                               'c-jobsearchpage_searchlink.current', ),

@@ -31,7 +31,7 @@ implement a customizable web crawler for the vacancies listed in the Airbus care
    :target: https://www.codacy.com/app/cpsancha/AJPOC
    :alt: Codacy
 
-.. image:: https://img.shields.io/badge/status-under%20development-blue
+.. image:: https://img.shields.io/badge/status-in%20development-blue
 
 ***************
 Project stages:
