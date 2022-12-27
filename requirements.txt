@@ -7,5 +7,5 @@ pylint==2.4.3
 pytest==5.2.2
 pytest-cov==2.8.1
 scrapy==1.8.0
-setuptools==41.6.0
+setuptools==65.5.1
 wheel==0.33.6
